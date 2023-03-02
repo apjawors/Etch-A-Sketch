@@ -17,11 +17,16 @@
             </div>
         </div>
         <div class="bottom">
-            <div class="slider-container">
-                <h3>Grid Size</h3>
-                <input type="range" min="1" max="32" value="1" id="slider">
-                <output id="range-display">1x1</output>
-                <button>Erase!</button>
+            <div class="grid-attributes-container">
+                <div class="size-container">
+                    <h3>Grid Size</h3>
+                    <input type="range" min="1" max="100" value="1" id="slider">
+                    <output id="range-display">1x1</output>
+                    <div class="buttons-container">
+                        <button id="erase">Erase!</button>
+                        <button id="border-btn">Remove border</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
