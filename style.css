@@ -1,5 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 
 body {
+    margin: 0;
     font-family: 'Cabin Sketch', cursive;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    align-self: center;
+    font-size: 4em;
+    text-align: center;
+}
+
+.bottom {
+    align-self: center
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: grid;
+    height: 600px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#grid > div {
+    border: 1px solid black;
+    transition: background .05s ease;
+}
+
+#grid > div:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 10px;
 }
